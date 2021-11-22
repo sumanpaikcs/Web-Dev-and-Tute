@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is html form</title>
+  </head>
+  <body>
+    <h2>This is a html form create for tute puropse</h2>
+    <!-- form tag -->
+    <form action="backend.php">
+      <!-- Name: <input type="text"> -->
+      <!-- <br> tag not recommended -->
+      <label for="name">Name:</label>
+      <!-- This is how label tag works // connect the "id" through "for="..." -->
+      <div>
+        <input type="text" name="myname" id="name" />
+      </div>
+      <div>Roll: <input type="text" name="myroll" /></div>
+      <div>
+        Email: <input type="email" name="myemail" id="" />
+        <!-- shotcut "input:email" -->
+      </div>
+      <div>Date: <input type="date" name="mydate" id="" /></div>
+      <div>Bonus: <input type="number" name="mybonus" id="" /></div>
+      <div>Are you eligible:<input type="checkbox" name="mycheck" id="" /></div>
+      <div>
+        Male:<input type="radio" name="mygender" id="" /> Female:<input
+          type="radio"
+          name="mygender"
+          id=""
+        />
+      </div>
+      Write about yourself: <br />
+      <textarea name="description" id="" cols="30" rows="10"></textarea>
+      <div>
+        <label for="car">Car:</label> <br />
+        <select name="mycar" id="car">
+          <option value="Honda">Honda</option>
+          <option value="Ford">Ford</option>
+          <option value="BMW">BMW</option>
+          <option value="Tata">Tata</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Submit Now" />
+        <input type="reset" value="reest now" />
+      </div>
+    </form>
+  </body>
+</html>
