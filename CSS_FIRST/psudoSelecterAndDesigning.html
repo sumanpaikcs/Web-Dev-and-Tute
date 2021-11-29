@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudo selectors & more designing</title>
     <style>
-        *{
-            box-sizing: border-box;
-        }
-        .container{
-            border: 2px solid rgb(77, 7, 7);
-            background-color: hsl(17, 75%, 89%);
-            padding: 30px;
-            margin: 30px auto;
-            width: 777px;
-            border-radius: 8px;
-        }
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid rgb(77, 7, 7);
+        background-color: hsl(17, 75%, 89%);
+        padding: 30px;
+        margin: 30px auto;
+        width: 777px;
+        border-radius: 8px;
+      }
+      a{
+          text-decoration: none;
+      }
+      a:hover{
+          color: rgb(252, 225, 184);
+          /* background-color: rgb(255, 116, 106); */
+      }
+      a:visited{
+          background-color: yellow;
+      }
+      a:active{
+          background-color: violet;
+      }
+      .btn {
+        background-color: rgb(209, 194, 194);
+        padding: 8px;
+        border: none;
+        border-radius: 7px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .cont {
+        background-color: rgb(255, 0, 0);
+        border-radius: 7px;
+        padding: 8px;
+        border: none;
+        font-size: 14px;
+      }
+      body {
+        font-size: 15px;
+      }
+      .btn:hover{
+        color: royalblue;
+        background-color: aquamarine;
 
-    .btn{
-        background-color: rgb(255, 0, 0);
-        padding: 8px;
-        border: none;
-        border-radius: 7px;
-        font-size: 14px;
-    }
-    .cont{
-        background-color: rgb(255, 0, 0);
-        border-radius: 7px;
-        padding: 8px;
-        border: none;
-        font-size: 14px;
-        
-    }
-    body{
-        font-size:15px;
-    }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container" id="cont1">
-        <h3>This is the designing</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, error ad obcaecati excepturi vel accusamus aperiam similique maxime commodi, nulla quo saepe quod tempora culpa perferendis explicabo totam, molestias beatae.</p>
-        <button class="btn">Read More</button>
-        <button class="cont">Contact Us</button>
+      <h3>This is the designing</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, error ad
+        obcaecati excepturi vel accusamus aperiam similique maxime commodi,
+        nulla quo saepe quod tempora culpa perferendis explicabo totam,
+        molestias beatae.
+      </p>
+      <a href="https://facebook.com" class="btn">Read more</a>
+      <button class="btn">Contact Us</button>
     </div>
-</body>
+  </body>
 </html>
