@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allignment in HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+          box-sizing: border-box;
+      }
+      body {
+        font-family: "Ubuntu", sans-serif;
+      }
+      .container {
+          background-color: yellow;
+        width: 800px;
+        border: 3px solid gray;
+        border-radius: 13px;
+        margin: 40px auto;
+      }
+      .item {
+        background-color: lightgreen;
+        border: 2px solid gray;
+        border-radius: 13px;
+        margin: 12px 3px;
+        padding: 12px 3px;
+      }
+      #Fruits{
+        float: left;
+        width: 50%;
+      }
+      #Computer{
+
+      }
+      #stationary{
+
+      }
+      h1{
+          margin: auto;
+          width:  333px;
+          padding: 15px 1px 1px 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Wellcome to my Shop</h3>
+      <div id="fruits" class="item">
+        <h3>Fruits</h3>
+        <p id="fruitspara" class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab excepturi
+          cum sequi tempore unde eum eos, reprehenderit vero temporibus laborum
+          dolorum nesciunt quidem iusto alias, iste nam, dolores blanditiis?
+          Iste?
+        </p>
+      </div>
+
+      <div id="Computer " class="item">
+        <h3>computer</h3>
+        <p id="computerpara" class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          recusandae nemo voluptatibus impedit eius cumque nam cum blanditiis
+          distinctio nesciunt illo quasi sunt qui, odit dolore esse. Libero,
+          modi aliquid.
+        </p>
+      </div>
+
+      <div id="stationary" class="item">
+        <h3>Stationary</h3>
+        <p id="stationarypara" class="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, magnam?
+          Nesciunt, quod laudantium. Beatae reprehenderit dolor eveniet quasi
+          dicta quaerat minus, laborum numquam asperiores expedita labore fugiat
+          illum voluptatibus quod.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
