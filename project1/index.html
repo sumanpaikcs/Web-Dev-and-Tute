@@ -6,57 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linux My Gym WebSite</title>
   </head>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-        body {
-          color: white;
-          margin: 0px;
-          padding: 0px;
-          background: url("img/christian-papaux-iXzb7r4B1nI-unsplash.jpg");
-          background-repeat: no-repeat;
-          background-position: center-up;
-          background-size: cover;
-        }
-        .first {
-          border: 2px solid red;
-          display: inline-block;
-          position: absolute;
-            left: 30px;
-            top: 15px;
-        }
-        .second {
-            display: block;
-        width: 51%;
-        margin: 15px auto;
-        border: 2px solid rgb(255, 255, 255);
+    body {
+      color: white;
+      font-family: "Baloo Bhai 2";
+      margin: 0px;
+      padding: 0px;
+      /* background: url("img/christian-papaux-iXzb7r4B1nI-unsplash.jpg"); */
+      background: url("img/maxence-pira-BslHPYspFXI-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-position: center-up;
+      background-size: cover;
+    }
+    .first {
+      border: 2px solid red;
+      display: inline-block;
+      position: absolute;
+      left: 30px;
+      top: 15px;
+    }
+    .first img {
+      width: 52px;
+      filter: invert(100%);
+    }
+    .first div {
+      text-align: center;
+      font-size: 14px;
+    }
+    .second {
+      display: block;
+      width: 57%;
+      margin: 15px auto;
+      border: 2px solid rgb(255, 255, 255);
     }
 
-    
-        .third {
-            position: absolute;
-            right: 30px;
-            top: 15px;
-            display: inline-block;
-          border: 2px solid rgb(51, 238, 135);
-        }
-        .navbar{
-            display: inline-block;
-        }
-        .navbar li{
-            display: inline-block;
-            font-size: 20px;
-        }
-        .navbar li a{
-            color: white;
-        text-decoration: none;
-        padding: 17px 25px;
-        }
+    .third {
+      position: absolute;
+      right: 30px;
+      top: 15px;
+      display: inline-block;
+      border: 2px solid rgb(51, 238, 135);
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 20px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 17px 25px;
+    }
+    .swit {
+      margin: 0% 8px;
+      color: white;
+      background-color: black;
+      padding: 3px 12px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: "Baloo Bhai 2";
+    }
+
+    .swit:hover {
+      background-color: rgb(43, 40, 40);
+    }
+    .container {
+      border: 2px solid green;
+      margin: 100px 275px;
+      /* padding: 170px;
+      padding-right: 20px; */
+      padding-left: 10px;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      /* width: 53px; */
+      border-radius: 22px;
+    }
+    .formseet input {
+      text-align: center;
+      display: block;
+      width: 317px;
+      padding: 5px;
+      border: 2px solid green;
+      margin: 5px auto;
+      border-radius: 8px;
+      font-size: 18px;
+      font-family: "Baloo Bhai 2";
+    }
+    .container button{
+      display: block;
+      width: 81px;
+      margin: auto;
+      background-color: rgb(43, 46, 42);
+
+    }
+    .container h1{
+      text-align: center;
+      color
+    }
   </style>
   <body>
     <header class="header">
       <div class="first">
+        <div>
+          <img
+            src="img/kisspng-github-logo-repository-computer-icons-5afa376c51ca94.387166531526347628335.png"
+            alt=""
+          />
+        </div>
         <!-- This is for logos -->
-        This is first
+        <div>MY SPACE</div>
       </div>
       <div class="second">
         <!-- This is for navigation menu -->
@@ -69,9 +137,30 @@
         </ul>
       </div>
       <div class="third">
+        <div>
+          <button class="swit">Email</button>
+          <button class="swit">Contact Us</button>
+        </div>
         <!-- This is for serches and buttons -->
-        This is third
       </div>
     </header>
+    <div class="container">
+      <h1>This is the pure html css website</h1>
+      <form action="backen.php">
+        <div class="formseet">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="formseet">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="formseet">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="formseet">
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <button class="swit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
