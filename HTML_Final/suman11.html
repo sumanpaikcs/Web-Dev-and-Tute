@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and button designing</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: small;
+        }
+        .container{
+            color: rgb(65, 62, 62);
+            background-color: rgb(245, 245, 194);
+            border: 3px solid rgb(190, 171, 0);
+            padding: 30px ;
+            margin: 20px auto;
+            width: 700px;
+        }
+        .readmore{
+            background-color: red;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background-color: yellow;
+            /* border: 1px solid red; */
+        }
+        button:hover{
+            background-color: rgb(115, 255, 0);
+            /* border: 1px solid red; */
+        }
+        a:visited{
+            background-color: blue;
+        }
+        a:active{
+            background-color: rgb(255, 0, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is styling</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi esse tempore corrupti voluptatem, tenetur eum facilis error, veniam molestiae, sed ea consequatur libero minima eligendi in facere aspernatur? Ad at esse corrupti facere laudantium dolore, cumque doloribus voluptatem harum voluptatibus debitis voluptatum labore vitae velit beatae voluptate modi ullam quos earum aperiam ipsa? Repellat tenetur nihil distinctio, reprehenderit debitis animi!</p>
+        <a href="https://google.com" class="readmore">Read More</a>
+        <button class="readmore">Contact Us</button>
+    </div>
+</body>
+</html>
