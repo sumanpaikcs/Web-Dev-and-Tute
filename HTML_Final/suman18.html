@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: yellow;
+            position: relative;
+            top: 60px;
+            z-index: 50;
+        }
+        #box2{
+            background-color: rgb(250, 6, 6);
+            position: relative;
+            top: 40px;
+            /* visibility: hidden;   only hide the element not spaces */
+            /* display: none;    delete both  */
+        }
+        #box3{
+            background-color: rgb(0, 255, 0);
+        }
+        #box4{
+            background-color: rgb(25, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
