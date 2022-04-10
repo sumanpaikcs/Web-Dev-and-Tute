@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After Pseudo Selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@100;200;300&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        margin: 0%;
+        padding: 0%;
+    }
+    header::before{
+          background: url("https://source.unsplash.com/random/1600x900") no-repeat
+            center center;
+            content: "";
+            position: absolute;
+            /* position absoltue is importent for display the backdround images */
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+
+
+      }
+      .navigation {
+        display: flex;
+        font-size: 13px;
+        font-family: "Righteous", cursive;
+      }
+      li {
+        list-style: none;
+        padding: 20px 13px;
+      }
+      section {
+        /* border:  2px solid red; */
+        /* border-bottom: 1px solid white; */
+        height: 310px;
+        margin: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      /* section::before{
+                  content: "This is content";
+              }
+              section::after{
+                  content: "This is content";
+              } */
+      h1 {
+        font-size: 2rem;
+      }
+      #para {
+        margin: 10px 30px;
+        padding: 10px auto;
+        text-align: center;
+        font-size: 0.8rem;
+        font-family: "Merriweather", serif;
+      }
+      /* header{
+                 display: flex;
+                 flex-direction: column;
+             } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About Us</li>
+          <li class="item">Contact Us</li>
+          <li class="item">Services</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome To Pseudo Selector</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, quasi
+        ducimus nostrum nesciunt soluta at numquam tempore velit atque deleniti,
+        obcaecati itaque voluptate non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto ratione dicta dolor modi similique non fuga libero, autem, sunt veniam asperiores cumque voluptate. Ratione quae error atque praesentium, tempore eos aut nemo! Odit, nihil?
+      </p>
+      <!-- <hr> -->
+    </section>
+  </body>
+</html>
