@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 20px 20px;
+            margin: 20px 30px;
+            /* border: 2px solid red ; */
+            background-color: rgb(255, 197, 197);
+            /* box-shadow: 8px 10px greenyellow;
+            not any blr created */
+            /* box-shadow: 8px 10px 7px rgb(32, 0, 0); */
+            box-shadow: 8px 10px 7px 2px rgb(32, 0, 0);
+            border-radius: 30px;
+            
+        }
+        .card h3{
+            text-shadow: 1.5px 1px 3px rgb(68, 68, 68);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card" id="card-1">
+            <h3>Card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur dolorum repellendus temporibus cupiditate magnam ipsa omnis? Hic consectetur obcaecati quae. Temporibus dolorem natus amet corrupti neque aspernatur perferendis necessitatibus? Inventore dicta fuga numquam.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h3>Card 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur dolorum repellendus temporibus cupiditate magnam ipsa omnis? Hic consectetur obcaecati quae. Temporibus dolorem natus amet corrupti neque aspernatur perferendis necessitatibus? Inventore dicta fuga numquam.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h3>Card 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consequatur dolorum repellendus temporibus cupiditate magnam ipsa omnis? Hic consectetur obcaecati quae. Temporibus dolorem natus amet corrupti neque aspernatur perferendis necessitatibus? Inventore dicta fuga numquam.</p>
+        </div>
+       
+    </div>
+</body>
+</html>
