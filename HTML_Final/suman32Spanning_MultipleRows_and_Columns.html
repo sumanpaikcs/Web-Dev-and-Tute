@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning Row and Column</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: repeat(4, 1fr);
+            /* grid-column-gap: 3rem;
+            grid-row-gap: 2rem; */
+            grid-gap: 1rem;
+        }
+        
+        .item{
+            border: 2px solid black;
+            background-color: rgb(240, 159, 159);
+            padding: 20px;
+        }
+        .item:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;*/
+            grid-column: 1 /span 3;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Itme 1</div>
+        <div class="item">Itme 2</div>
+        <div class="item">Itme 3</div>
+        <div class="item">Itme 4</div>
+        <div class="item">Itme 5</div>
+        <div class="item">Itme 6</div>
+        <div class="item">Itme 7</div>
+        <div class="item">Itme 8</div>
+        <div class="item">Itme 9</div>
+        <div class="item">Itme 10</div>
+        <div class="item">Itme 11</div>
+        <div class="item">Itme 11</div>
+    </div>
+</body>
+</html>
