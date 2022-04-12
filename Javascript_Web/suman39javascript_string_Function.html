@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+
+</head>
+<body>
+    
+
+
+
+    <script>
+        var string = "This is string";
+        console.log(string);
+        // first occurence of a substring
+        var position = string.indexOf('is');
+        console.log(position);
+
+        // last occurence of a substring
+        var position = string.lastIndexOf('is');
+        console.log(position);
+        
+        // substring from a string 
+        var substr = string.slice(1,8);
+        var substring = string.substring(1,9);
+        console.log(substr);
+        console.log(substring);
+
+        var replace = string.replace('string', 'suman');
+        console.log(replace);
+
+        console.log(string.toUpperCase());
+        console.log(string.toLowerCase());
+
+        var newstring = string.concat('New String');
+        console.log(newstring);
+
+        var trimstring = "     This is      new string     ";
+        console.log(trimstring);
+        console.log(trimstring.trim());
+
+        var character1 = string.charAt(2);
+        var character2 = string.charCodeAt(2);
+        console.log(character1);
+        console.log(character2);
+
+        console.log(string[3]);
+
+    </script>
+</body>
+</html>

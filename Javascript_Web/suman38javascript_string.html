@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Heading</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aliquid sed in laborum ipsum reiciendis, amet aperiam facere nobis animi, dolorum, delectus praesentium? Quod ipsam nisi et, velit doloremque ullam.</p>
+    </div>
+
+    <script>
+        var string = "this";
+        var name = "computer";
+        var temp = `${string} is a ${name}`;
+        console.log(string);
+        console.log(string + name);
+        console.log(temp);
+        var len = temp.length;
+        console.log(`Length of temp is ${len}`);
+        console.log("this is a \n nice computer");
+
+        document.getElementById('content').innerHTML = ' <h3>This is inner Jaavascript content</h3>'
+
+    </script>
+</body>
+</html>
